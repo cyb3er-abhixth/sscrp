@@ -1,13 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Shell, PageHeader } from "@/components/Shell";
-import { MessageCircle, Music2, Youtube, Instagram, Twitter, ArrowUpRight } from "lucide-react";
+import { MessageCircle, Music2, Youtube, Twitter, ArrowUpRight } from "lucide-react";
 import { SITE } from "@/lib/site";
 
 export const Route = createFileRoute("/community")({
   head: () => ({
     meta: [
       { title: "Community & Socials — South Sydney City RP" },
-      { name: "description", content: "Join the South Sydney City RP community on Discord, TikTok, YouTube, Instagram, and X." },
+      { name: "description", content: "Join the South Sydney City RP community on Discord, TikTok, X, and YouTube." },
       { property: "og:title", content: "Community — SSCRP" },
       { property: "og:description", content: "Follow SSCRP across Discord and social media." },
       { property: "og:url", content: "/community" },
@@ -20,8 +20,8 @@ export const Route = createFileRoute("/community")({
 const socials = [
   { icon: MessageCircle, name: "Discord", handle: "Primary hub", url: SITE.discord, color: "from-[oklch(0.6_0.2_270)] to-primary" },
   { icon: Music2, name: "TikTok", handle: "@southsydneycityrp", url: SITE.tiktok, color: "from-[oklch(0.7_0.15_330)] to-[oklch(0.5_0.2_200)]" },
-  { icon: Youtube, name: "YouTube", handle: "@southsydneycityrp", url: SITE.youtube, color: "from-[oklch(0.6_0.22_25)] to-[oklch(0.45_0.18_25)]" },
-  
+  { icon: Twitter, name: "X", handle: "@southsydneycityrp", url: SITE.x, color: "from-[oklch(0.3_0.02_240)] to-[oklch(0.18_0.02_240)]" },
+  { icon: Youtube, name: "YouTube", handle: "@southsydneyroleplayofficial", url: SITE.youtube, color: "from-[oklch(0.6_0.22_25)] to-[oklch(0.45_0.18_25)]" },
 ];
 
 function CommunityPage() {
@@ -78,9 +78,6 @@ function CommunityPage() {
           ))}
         </div>
 
-        <p className="mt-10 text-center text-xs text-muted-foreground">
-          Drop your real social URLs into <code className="font-mono text-primary">src/lib/site.ts</code> and they'll wire in automatically.
-        </p>
       </section>
     </Shell>
   );

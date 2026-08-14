@@ -1,6 +1,5 @@
 {
   "name": "tanstack_start_ts",
-  "homepage": "https://cyb3er-abhixth.github.io/sscrp/",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -11,8 +10,9 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "vercel:dev": "vercel dev",
+    "vercel:login": "vercel login",
+    "deploy:prod": "vercel --prod --confirm"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.2.8",

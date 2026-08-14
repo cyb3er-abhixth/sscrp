@@ -35,6 +35,7 @@ export function Footer() {
           <ul className="space-y-2 text-sm">
             <li><a className="text-muted-foreground hover:text-foreground" href={SITE.discord} target="_blank" rel="noreferrer">Discord</a></li>
             <li><a className="text-muted-foreground hover:text-foreground" href={SITE.tiktok} target="_blank" rel="noreferrer">TikTok</a></li>
+            <li><a className="text-muted-foreground hover:text-foreground" href={SITE.x} target="_blank" rel="noreferrer">X</a></li>
             <li><a className="text-muted-foreground hover:text-foreground" href={SITE.youtube} target="_blank" rel="noreferrer">YouTube</a></li>
           </ul>
         </div>

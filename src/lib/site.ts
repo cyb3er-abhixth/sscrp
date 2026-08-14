@@ -6,7 +6,7 @@ export const SITE = {
     "South Sydney City RP is a serious-roleplay ER:LC private server set in a reimagined Sydney. Join NSW Police, Highway Patrol, Fire & Rescue, NSW Ambulance, or live as a civilian.",
   // Placeholder links — swap these for real URLs when ready.
   discord: "https://discord.gg/CZPhs66TWZ",
-  tiktok: "https://www.tiktok.com/@southsydneycityrp",
+  tiktok: "https://www.tiktok.com/@south.sydney.city?_r=1&_t=ZS-98qWr6vtfs1",
   x: "https://x.com/shirlee24294",
   youtube: "https://youtube.com/@southsydneyroleplayofficial",
   erlcCode: "SYDNEYSRP",

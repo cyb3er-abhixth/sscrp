@@ -42,23 +42,23 @@ component: StaffPage,
 
 
 interface StaffMember {
-name: string;
-role: string;
-handle: string;
+	name: string;
+	role: string;
+	handle: string;
 
-timezone?: string;
-discord?: string;
-joined?: string;
-about?: string;
-responsibilities?: string[];
+	timezone?: string;
+	discord?: string;
+	joined?: string;
+	about?: string;
+	responsibilities?: string[];
 }
 
 
 interface StaffTier {
-icon: LucideIcon;
-tier: string;
-accent: string;
-members: StaffMember[];
+	icon: LucideIcon;
+	tier: string;
+	accent: string;
+	members: StaffMember[];
 }
 
 
@@ -178,11 +178,11 @@ const tiers: StaffTier[] = [
 		},
 
 		{
-			name: "blake29332",
+			name: "nuzi",
 			role: "Server Management",
-			handle: "@blake29332",
-			timezone: "NC/USA",
-			discord: "blake29332",
+			handle: "@zanethecutedragongirl",
+			timezone: "Eng/EU",
+			discord: "zanethecutedragongirl",
 			joined: "August 2026",
 			about: "Responsible for server management and overall development of the server.",
 

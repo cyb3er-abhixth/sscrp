@@ -10,7 +10,7 @@ import { SITE } from "@/lib/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "South Sydney City R" },
+      { title: "South Sydney City RP" },
       { name: "description", content: SITE.description },
       { property: "og:title", content: "South Sydney City RP" },
       { property: "og:description", content: SITE.description },

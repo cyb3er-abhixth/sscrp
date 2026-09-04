@@ -79,12 +79,13 @@ const tiers: StaffTier[] = [
 		joined: "November 2025",
 
 		about:
-		"Founder of South Sydney City RP and responsible for the overall vision of the community.",
+		"Founder of South Sydney City RP and the driving force behind the community's vision, standards, and long-term direction.",
 
 		responsibilities: [
-		"Community Leadership",
-		"Server Direction",
-		"Staff Oversight",
+		"Community leadership",
+		"Long-term vision",
+		"Staff oversight",
+		"Server direction",
 		],
 	},
 
@@ -98,12 +99,13 @@ const tiers: StaffTier[] = [
 		joined: "December 2025",
 
 		about:
-		"Co-Founder responsible for website development, server systems and technical improvements.",
+		"Co-Founder focused on the website, server infrastructure, automation, and the technical stability of the community.",
 
 		responsibilities: [
-		"Website Development",
-		"Server Development",
-		"Technical Support",
+		"Website and platform development",
+		"Server systems and automation",
+		"Technical support",
+		"Community tooling",
 		],
 	},
 	{
@@ -115,12 +117,13 @@ const tiers: StaffTier[] = [
 		joined: "July 2026",
 
 		about:
-		"Founder of The Secretary™ and responsible for all bugs and development of the server as well as The Secretary™.",
+		"Ownership member focused on technical reliability, automation, and server-side development that supports the wider community.",
 
 		responsibilities: [
-			"Bots",
-			"Automation",
-			"Crisis helping",
+			"Server development",
+			"Automation and bots",
+			"Bug fixing",
+			"Technical support",
 		],
 	},
 	],
@@ -140,15 +143,15 @@ const tiers: StaffTier[] = [
 			discord: "sailor200822",
 			joined: "June 2026",
 
-			about: "Responsible for directing the overall vision and strategy of the community. Also, oversees all assets aand manages Australian Federal Police.",
+			about: "Director overseeing the broader strategy, department coordination, and asset management across the community.",
 
 			responsibilities: [
-				"Server Direction",
-				"Staff Oversight",
-				"Asset Management",
-				"Livery Management",
-				"Australian Federal Police Management",
-				"Funds Provider."
+				"Server direction",
+				"Department oversight",
+				"Asset management",
+				"Livery management",
+				"AFP management",
+				"Strategic planning"
 			],
 		},
 		],
@@ -162,18 +165,19 @@ const tiers: StaffTier[] = [
 		members: [
 		{
 			name: "chicken_nuggets353ew",
-			role: "In-Game Management",
+			role: "Head Of Staff",
 			handle: "@chicken_nuggets353ew",
 			timezone: "Australia/Sydney",
 			discord: "chicken_nuggets353ew",
 			joined: "May 2026",
 
-			about: "Responsible for in-game management and ensuring the server runs smoothly.",
+			about: "Head of Staff responsible for in-game staff management, communication, and ensuring the server remains active and fair.",
 
 			responsibilities: [
-				"In-Game Management",
-				"Community Engagement",
-				"SSU Oversight",
+				"In-game staff oversight",
+				"Community engagement",
+				"SSU oversight",
+				"Staff coordination",
 			],
 		},
 
@@ -184,12 +188,13 @@ const tiers: StaffTier[] = [
 			timezone: "Eng/EU",
 			discord: "zanethecutedragongirl",
 			joined: "August 2026",
-			about: "Responsible for server management and overall development of the server.",
+			about: "Server Management responsible for maintaining active operations, community momentum, and overall day-to-day development.",
 
 			responsibilities: [
-				"Server Management",
-				"Ensures active community",
-				"Overall Development",
+				"Server management",
+				"Community activity",
+				"Operational oversight",
+				"Overall development",
 			],
 		},
 		],
@@ -215,11 +220,13 @@ const tiers: StaffTier[] = [
 			discord: "tomalan5",
 			joined: "August 2026",
 
-			about: "Responsible for assisting with server administration and ensuring the server runs smoothly.",
+			about: "Junior Administrator helping monitor server activity and support administration tasks across the community.",
 
 			responsibilities: [
-				"Assisting with Server Administration",
-				"Server activity monitoring",
+				"Server administration support",
+				"Activity monitoring",
+				"Issue response",
+				"Staff coordination",
 			],
 		},
 		],
@@ -240,12 +247,13 @@ const tiers: StaffTier[] = [
 				discord: "aj_aathiq",
 				joined: "January 2026",
 
-				about: "Responsible for moderating the server and ensuring the community is safe and enjoyable for all members.",
+				about: "Moderator focused on maintaining a healthy, safe, and welcoming environment for all players.",
 
 				responsibilities: [
-					"Moderating the server",
-					"Ensuring community safety",
-					"Community engagement",
+					"Community moderation",
+					"Rule enforcement",
+					"Player support",
+					"Safety monitoring",
 				],
 			},
 			{
@@ -256,12 +264,13 @@ const tiers: StaffTier[] = [
 				discord: "lilshitter__75857",
 				joined: "December 2025",
 				
-				about: "Responsible for moderating the server and ensuring the community is safe and enjoyable for all members.",
+				about: "Moderator helping enforce community standards and keep gameplay fair, safe, and enjoyable for everyone.",
 
 				responsibilities: [
-					"Moderating the server",
-					"Ensuring community safety",
-					"Community engagement",
+					"Community moderation",
+					"Rule enforcement",
+					"Player support",
+					"Community safety",
 				],
 			},
 		],

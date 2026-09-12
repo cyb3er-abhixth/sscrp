@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { NAV, SITE } from "@/lib/site";
 import { Crest } from "./Crest";
@@ -7,7 +8,12 @@ import { Crest } from "./Crest";
 export function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur-md">
+    <motion.header
+      initial={{ opacity: 0, y: -18 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+      className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur-md"
+    >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 md:px-6">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <Crest size={40} />
@@ -21,25 +27,32 @@ export function Header() {
 
         <nav className="hidden items-center gap-1 lg:flex">
           {NAV.map((item) => (
-            <Link
+            <motion.div
               key={item.to}
-              to={item.to}
-              activeProps={{ className: "text-primary bg-secondary/60" }}
-              inactiveProps={{ className: "text-muted-foreground hover:text-foreground" }}
-              activeOptions={{ exact: true }}
-              className="text-tracked rounded-md px-3 py-2 text-xs transition-colors"
+              whileHover={{ y: -2 }}
+              transition={{ duration: 0.2 }}
             >
-              {item.label}
-            </Link>
+              <Link
+                to={item.to}
+                activeProps={{ className: "text-primary bg-secondary/60" }}
+                inactiveProps={{ className: "text-muted-foreground hover:text-foreground" }}
+                activeOptions={{ exact: true }}
+                className="text-tracked rounded-md px-3 py-2 text-xs transition-colors"
+              >
+                {item.label}
+              </Link>
+            </motion.div>
           ))}
-          <a
+          <motion.a
             href={SITE.discord}
             target="_blank"
             rel="noreferrer"
             className="text-tracked ml-2 rounded-md bg-primary px-4 py-2 text-xs text-primary-foreground shadow-[var(--shadow-glow)] transition-transform hover:scale-[1.02]"
+            whileHover={{ y: -2, scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
           >
             Join Discord
-          </a>
+          </motion.a>
         </nav>
 
         <button
@@ -78,6 +91,6 @@ export function Header() {
           </div>
         </nav>
       )}
-    </header>
+    </motion.header>
   );
 }

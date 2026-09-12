@@ -128,17 +128,28 @@ function Home() {
           </motion.div>
 
           {/* stats */}
-          <div className="mt-14 grid w-full max-w-3xl grid-cols-2 gap-3 sm:grid-cols-4">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {},
+              visible: { transition: { delayChildren: 1, staggerChildren: 0.08 } },
+            }}
+            className="mt-14 grid w-full max-w-3xl grid-cols-2 gap-3 sm:grid-cols-4"
+          >
             {stats.map((s) => (
-              <div
+              <motion.div
                 key={s.label}
+                variants={{ hidden: { opacity: 0, y: 14 }, visible: { opacity: 1, y: 0 } }}
+                whileHover={{ y: -5, borderColor: "var(--color-primary)" }}
+                transition={{ duration: 0.25 }}
                 className="rounded-md border border-border bg-card/50 px-4 py-4 backdrop-blur"
               >
                 <div className="font-display text-2xl text-primary md:text-3xl">{s.value}</div>
                 <div className="text-tracked mt-1 text-[10px] text-muted-foreground">{s.label}</div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
 
         {/* marquee */}
@@ -202,22 +213,31 @@ function Home() {
 
       {/* CTA */}
       <section className="border-y border-border bg-card/40 px-4 py-16 md:px-6">
-        <div className="mx-auto flex max-w-5xl flex-col items-center text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.35 }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="mx-auto flex max-w-5xl flex-col items-center text-center"
+        >
           <div className="text-tracked text-xs text-primary">Ready up</div>
           <h2 className="font-display mt-2 text-3xl sm:text-4xl md:text-6xl">Enjoyment starts here.</h2>
           <p className="mt-3 max-w-xl text-sm text-muted-foreground">
             Join 80+ members already in South Sydney City. New officers, paramedics, firies, and civs welcome.
             We are currently hiring.
           </p>
-          <a
+          <motion.a
             href="https://discord.gg/CZPhs66TWZ"
             target="_blank"
             rel="noreferrer"
             className="text-tracked mt-8 inline-flex rounded-md bg-primary px-8 py-4 text-xs text-primary-foreground shadow-[var(--shadow-glow)]"
+            whileHover={{ y: -4, scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ duration: 0.2 }}
           >
             Join Discord →
-          </a>
-        </div>
+          </motion.a>
+        </motion.div>
       </section>
 
       <style>{`

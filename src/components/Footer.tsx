@@ -1,10 +1,17 @@
 import { Link } from "@tanstack/react-router";
+import { motion } from "framer-motion";
 import { NAV, SITE } from "@/lib/site";
 import { Crest } from "./Crest";
 
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-border bg-card/40">
+    <motion.footer
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+      className="mt-24 border-t border-border bg-card/40"
+    >
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-3 md:px-6">
         <div>
           <div className="flex items-center gap-3">
@@ -21,11 +28,11 @@ export function Footer() {
           <div className="text-tracked mb-3 text-[10px] text-primary">Navigate</div>
           <ul className="grid grid-cols-2 gap-2 text-sm">
             {NAV.map((n) => (
-              <li key={n.to}>
+              <motion.li key={n.to} whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
                 <Link to={n.to} className="text-muted-foreground transition-colors hover:text-foreground">
                   {n.label}
                 </Link>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>
@@ -43,6 +50,6 @@ export function Footer() {
       <div className="border-t border-border px-4 py-6 text-center text-xs text-muted-foreground md:px-6">
         © {new Date().getFullYear()} South Sydney City RP. Not affiliated with Roblox Corporation or Police Roleplay Community. Follow Discord and Roblox ToS.
       </div>
-    </footer>
+    </motion.footer>
   );
 }

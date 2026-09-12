@@ -154,6 +154,23 @@ const tiers: StaffTier[] = [
 				"Strategic planning"
 			],
 		},
+		{
+			name: "chicken_nuggets353ew",
+			role: "Deputy Director",
+			handle: "@chicken_nuggets353ew",
+			timezone: "Australia/Sydney",
+			discord: "chicken_nuggets353ew",
+			joined: "May 2026",
+
+			about: "Deputy Director responsible for supporting the Director and managing various aspects of the community's operations.",
+
+			responsibilities: [
+				"Supporting the Director",
+				"Community engagement",
+				"SSU oversight",
+				"Staff coordination",
+			],
+		},
 		],
 	},
 
@@ -163,40 +180,9 @@ const tiers: StaffTier[] = [
 		accent: "text-primary",
 
 		members: [
-		{
-			name: "chicken_nuggets353ew",
-			role: "Head Of Staff",
-			handle: "@chicken_nuggets353ew",
-			timezone: "Australia/Sydney",
-			discord: "chicken_nuggets353ew",
-			joined: "May 2026",
+		
 
-			about: "Head of Staff responsible for in-game staff management, communication, and ensuring the server remains active and fair.",
-
-			responsibilities: [
-				"In-game staff oversight",
-				"Community engagement",
-				"SSU oversight",
-				"Staff coordination",
-			],
-		},
-
-		{
-			name: "nuzi",
-			role: "Server Management",
-			handle: "@zanethecutedragongirl",
-			timezone: "Eng/EU",
-			discord: "zanethecutedragongirl",
-			joined: "August 2026",
-			about: "Server Management responsible for maintaining active operations, community momentum, and overall day-to-day development.",
-
-			responsibilities: [
-				"Server management",
-				"Community activity",
-				"Operational oversight",
-				"Overall development",
-			],
-		},
+		
 		],
 	},
 
@@ -214,13 +200,13 @@ const tiers: StaffTier[] = [
 
 		{
 			name: "tomalan5",
-			role: "Junior Administrator",
+			role: "Senior Administrator",
 			handle: "@tomalan5",
 			timezone: "Africa/Kenya",
 			discord: "tomalan5",
 			joined: "August 2026",
 
-			about: "Junior Administrator helping monitor server activity and support administration tasks across the community.",
+			about: "Senior Administrator helping monitor server activity and support administration tasks across the community.",
 
 			responsibilities: [
 				"Server administration support",
@@ -257,20 +243,37 @@ const tiers: StaffTier[] = [
 				],
 			},
 			{
-				name: "lilshitter__75857",
-				role: "Moderator",
-				handle: "@lilshitter__75857",
-				timezone: "Australia/Sydney",
-				discord: "lilshitter__75857",
-				joined: "December 2025",
-				
-				about: "Moderator helping enforce community standards and keep gameplay fair, safe, and enjoyable for everyone.",
+				name: "general_tim6",
+				role: "Trial Moderator",
+				handle: "@general_tim6",
+				timezone: "Europe/England",
+				discord: "general_tim6",
+				joined: "September 2026",
+
+				about: "Trial Moderator focused on maintaining a healthy, safe, and welcoming environment for all players.",
 
 				responsibilities: [
 					"Community moderation",
 					"Rule enforcement",
 					"Player support",
-					"Community safety",
+					"Safety monitoring",
+				],
+			},
+			{
+				name: "oratilweiscool321",
+				role: "Trial Moderator",
+				handle: "@oratilweiscool321",
+				timezone: "South Africa/Johannesburg",
+				discord: "oratilweiscool321",
+				joined: "September 2026",
+
+				about: "Trial Moderator focused on maintaining a healthy, safe, and welcoming environment for all players.",
+
+				responsibilities: [
+					"Community moderation",
+					"Rule enforcement",
+					"Player support",
+					"Safety monitoring",
 				],
 			},
 		],
